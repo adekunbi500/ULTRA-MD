@@ -10,11 +10,11 @@ const defaultOwner = '+2348166698122';
 
 
 // Check for the OWNERS environment variable; if not found, use the default
-const ownervb = process.env.OWNERS || process.env.OWNER_NUMBER || 'your number';  // put your number here
+const ownervb = process.env.OWNERS || process.env.OWNER_NUMBER || 'your number';  // +2348166698122
 
 const ownerlist = ownervb.split(';');
 
-global.owner = [];
+global.owner = [+2348166698122];
 for (let i = 0; i < ownerlist.length; i++) {
     global.owner.push([ownerlist[i], true]);
 }
